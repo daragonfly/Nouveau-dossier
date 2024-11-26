@@ -1,0 +1,169 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFD700;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page {
+    display: none;
+    width: 300px;
+    background: #FFD700;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.page.active {
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #FFA500;
+}
+
+.profile, .notifications {
+    display: flex;
+    align-items: center;
+    width: 50%; /* Ajustez cette valeur selon vos besoins */
+}
+
+.profile img, .notifications img {
+    width: 40px; /* Ajustez cette valeur selon vos besoins */
+    height: 40px; /* Ajustez cette valeur selon vos besoins */
+    border-radius: 50%;
+    margin-right: 10px; /* Ajoute une marge à droite pour l'image de profil */
+}
+
+.profile span {
+    font-size: 16px; /* Ajustez cette valeur selon vos besoins */
+}
+
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content img {
+    width: 100px;
+    height: 100px;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.content p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.content button {
+    padding: 10px 20px;
+    background: #333;
+    color: #FFD700;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background: #FFA500;
+}
+
+.nav-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-item.active img {
+    filter: invert(100%);
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.filters button {
+    padding: 5px 10px;
+    background: #FFA500;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.product img {
+    width: 80px;
+    height: 80px;
+}
+
+.product p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.product span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-details img {
+    width: 150px;
+    height: 150px;
+}
+
+.product-details p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.product-details span {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description p {
+    font-size: 12px;
+    margin: 10px 0;
+}
